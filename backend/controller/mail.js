@@ -92,7 +92,8 @@ exports.mail = async (req,res)=>{
         // console.log("Error has occured while sending email",error.message);
         return res.status(500).json({
             success : false,
-            message : "Could not send the mail at this moment"
+            message : "Could not send the mail at this moment",
+            data : error
         })
     }
 }
