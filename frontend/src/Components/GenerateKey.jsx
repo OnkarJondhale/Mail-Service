@@ -20,7 +20,8 @@ const GenerateKey = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/sendaccesskey', {
+      const URL = import.meta.env.VITE_BACKEND_URL;
+      const response = await fetch(`${URL}sendaccesskey`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
