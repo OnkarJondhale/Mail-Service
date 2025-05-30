@@ -3,7 +3,7 @@ const User = require('../models/User.js');
 const accessKeyTemplate = require('../template/accesskey.js');
 const businessTemplate = require('../template/business.js');
 const crypto = require('crypto');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 exports.sendAccessKey = async (req,res)=>{
     try 
