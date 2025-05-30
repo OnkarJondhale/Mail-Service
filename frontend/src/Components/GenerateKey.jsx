@@ -64,7 +64,7 @@ const GenerateKey = () => {
   <textarea id="body" name="body" placeholder="Enter your message" rows="4" required></textarea><br><br>
   
   <!-- Hidden field for the access key -->
-  <input type="hidden" id="access_key" name="access_key" value="04a0aa25-9810-44c0-8828-07b4c7d40600">
+  <input type="hidden" id="access_key" name="access_key" value="ENTER_YOUR_ACCESS_KEY_HERE">
   
   <button type="submit">Send Mail</button>
 </form>
