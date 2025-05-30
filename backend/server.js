@@ -10,14 +10,13 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('',router);
+app.use('/', router);
 
-app.get("/",(req,res)=>{
+app.get("/", (req, res) => {
     res.status(200).json({
-        message : "Hello,World!"
-    })
-})
+        message: "Hello, World!"
+    });
+});
 
-app.listen(3000,()=>{
-    console.log("Server stated successfully");
-})
+// Correct the port for Vercel
+module.exports = app;
