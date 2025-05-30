@@ -53,7 +53,7 @@ const GenerateKey = () => {
 
   const getFormSnippet = () => {
     return `
-      <form id="mailForm" action="http://localhost:3000/sendmail" method="post">
+      <form id="mailForm" action="https://mail-service-t9q1.vercel.app/sendmail" method="post">
   <label for="sender">Sender:</label><br>
   <input type="text" id="sender" name="sender" placeholder="Enter sender email" required><br><br>
   
